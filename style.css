@@ -1,0 +1,156 @@
+*{
+	/* background-color: transparent; */
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+body,html{
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Belanosima', sans-serif;
+	font-family: 'Caveat', cursive;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto Mono', monospace;
+}
+#upper{
+	background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Jup3_Echo24_outsidebeachh_IMG_0087_desktop_8f619083ab.jpg');
+	min-height: 100vh;
+}
+#nav{
+	display: flex;
+	justify-content: space-around;
+	/* background-color:black; */
+	/* display: block;
+	justify-content: center;
+	height: 13vh;
+	align-items: center */
+	
+	
+}
+#button1:hover{
+	cursor: pointer;
+}
+#nav2{
+	display: inline-flex;
+	justify-content: center;
+	height: 13vh;
+	align-items: center
+	
+}
+.inisidenav{
+	
+	padding-left: 10.3vw;
+	
+	display: inline-flex;
+	gap:1vw;
+	font-size: 0.7em;
+	color:aliceblue;
+}
+
+#inisdeflex2{
+	
+	display: flex;
+	gap :2vw;
+	flex-wrap: wrap;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.logo{	
+	position: relative;
+	top: -0.4vw;
+	margin-left: 200px;
+	width:200px;
+	height:27.75px;
+	margin:0px;
+	padding:0px;
+
+
+}
+
+.beneathitinside{
+	color:aliceblue;
+	justify-self: flex-end;
+	align-self: center;
+	/* justify-self: flex-end; */
+	padding-left: 10vw;
+	
+	/* margin:; */
+	display: inline-flex;
+	gap:2vw;
+}
+.beneathitinside span{
+	overflow-y: hidden;
+	overflow-x: hidden;	
+}
+#main{
+ position:relative;
+ top:27vw; 
+ left:25vw;
+ color: white;
+ display: inline-block;
+ height: 200px;
+
+}
+
+#main a{
+	padding: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  color: aliceblue;
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+  width: 6vw; 
+}
+#main>a>h5{
+	font-size: 1vw;
+}
+
+#mid{
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg');
+
+} 
+
+#mid2{
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Euclid_outsidetowerh_IMG_2487_desktop_a75e89406d.jpg');
+	
+}
+#mid3{
+		box-sizing: border-box;
+		width: 100vw;
+		height: 100vh;
+		background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_7_072823_DSC_8788_desktop_f41c7463de.jpg');
+
+}
+
+.main2{
+	position:relative;
+	top:27vw; 
+	left:25vw;
+	color: white;
+	display: inline-block;
+	height: 200px;
+}
+.main2 a{ 
+	padding: 5px 5px 5px 5px;
+	border: 1px solid white;
+	color: aliceblue;
+	margin-top: 10px;
+	text-decoration: none;
+	display: block;
+	width: 6vw;  
+}
+
