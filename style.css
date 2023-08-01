@@ -14,6 +14,35 @@ body,html{
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Roboto Mono', monospace;
 }
+a{
+	text-decoration: none;
+	color:white;
+}
+
+#mnuepage{
+	
+	display:none;
+	flex-direction: row-reverse;
+	position:absolute;
+	z-index:99999;
+	
+
+	
+	
+
+}
+#mnuepage .extraspace2{
+	flex-grow:1;
+}
+
+#mnuepage .extraspace{
+	flex-grow:3;
+}
+
+
+
+
+		
 #upper{
 	background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Jup3_Echo24_outsidebeachh_IMG_0087_desktop_8f619083ab.jpg');
 	min-height: 100vh;
