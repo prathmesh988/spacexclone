@@ -19,27 +19,35 @@ a{
 	color:white;
 }
 
-#mnuepage{
+#mnuepage,#flex-item2,.whomeliiii {
 	
 	display:none;
-	flex-direction: row-reverse;
-	position:absolute;
-	z-index:99999;
-	
+	/* flex-direction: row-reverse; */
+	/* position:absolute;
 
-	
-	
+	z-index:99999;
+	 */
 
 }
-#mnuepage .extraspace2{
+#flex-item1{
+
+	background-color: black;
+	opacity: 0.2;
+}
+ 
+/* #mnuepage .extraspace2{
 	flex-grow:1;
 }
 
 #mnuepage .extraspace{
 	flex-grow:3;
+} */
+
+
+
+#flex-item2 hr{
+	display: none;
 }
-
-
 
 
 		
