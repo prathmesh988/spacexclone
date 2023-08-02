@@ -191,3 +191,24 @@ a{
 	width: 6vw;  
 }
 
+.flex-item1cls{
+	background-color: linear-gradient(#817f7f, #3f3f40, #000000);
+	overflow: hidden;
+	opacity: 6;
+	min-height: 100vh; 
+	/* height: 120vh; */
+	/* flex-grow:3; */
+	width: 80vw;
+	 opacity: 0.3;
+
+	left:10px;
+}
+.flex-item2cls{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:20vw;
+	padding:20px;
+	height: 100vh;
+	
+}

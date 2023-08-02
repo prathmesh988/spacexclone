@@ -1,0 +1,400 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Caveat&family=Lato:wght@900&family=Montserrat:wght@600&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        *{
+	/* background-color: transparent; */
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+body,html{
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Belanosima', sans-serif;
+	font-family: 'Caveat', cursive;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto Mono', monospace;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+
+#mnuepage,#flex-item2,.whomeliiii {
+	
+	display:none;
+	/* flex-direction: row-reverse; */
+	/* position:absolute;
+
+	z-index:99999;
+	 */
+
+}
+#flex-item1{
+
+	background-color: black;
+	opacity: 0.2;
+}
+ 
+/* #mnuepage .extraspace2{
+	flex-grow:1;
+}
+
+#mnuepage .extraspace{
+	flex-grow:3;
+} */
+
+
+
+#flex-item2 hr{
+	display: none;
+}
+
+
+		
+#upper{
+	background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Jup3_Echo24_outsidebeachh_IMG_0087_desktop_8f619083ab.jpg');
+	min-height: 100vh;
+}
+#nav{
+	display: flex;
+	justify-content: space-around;
+	/* background-color:black; */
+	/* display: block;
+	justify-content: center;
+	height: 13vh;
+	align-items: center */
+	
+	
+}
+#button1:hover{
+	cursor: pointer;
+}
+#nav2{
+	display: inline-flex;
+	justify-content: center;
+	height: 13vh;
+	align-items: center
+	
+}
+.inisidenav{
+	
+	padding-left: 10.3vw;
+	
+	display: inline-flex;
+	gap:1vw;
+	font-size: 0.7em;
+	color:aliceblue;
+}
+
+#inisdeflex2{
+	
+	display: flex;
+	gap :2vw;
+	flex-wrap: wrap;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.logo{	
+	position: relative;
+	top: -0.4vw;
+	margin-left: 200px;
+	width:200px;
+	height:27.75px;
+	margin:0px;
+	padding:0px;
+
+
+}
+
+.beneathitinside{
+	color:aliceblue;
+	justify-self: flex-end;
+	align-self: center;
+	/* justify-self: flex-end; */
+	padding-left: 10vw;
+	
+	/* margin:; */
+	display: inline-flex;
+	gap:2vw;
+}
+.beneathitinside span{
+	overflow-y: hidden;
+	overflow-x: hidden;	
+}
+#main{
+ position:relative;
+ top:27vw; 
+ left:25vw;
+ color: white;
+ display: inline-block;
+ height: 200px;
+
+}
+
+#main a{
+	padding: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  color: aliceblue;
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+  width: 6vw; 
+}
+#main>a>h5{
+	font-size: 1vw;
+}
+
+#mid{
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg');
+
+} 
+
+#mid2{
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Euclid_outsidetowerh_IMG_2487_desktop_a75e89406d.jpg');
+	
+}
+#mid3{
+		box-sizing: border-box;
+		width: 100vw;
+		height: 100vh;
+		background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_7_072823_DSC_8788_desktop_f41c7463de.jpg');
+
+}
+
+.main2{
+	position:relative;
+	top:27vw; 
+	left:25vw;
+	color: white;
+	display: inline-block;
+	height: 200px;
+}
+.main2 a{ 
+	padding: 5px 5px 5px 5px;
+	border: 1px solid white;
+	color: aliceblue;
+	margin-top: 10px;
+	text-decoration: none;
+	display: block;
+	width: 6vw;  
+}
+
+.flex-item1cls{
+	background-color: linear-gradient(#817f7f, #3f3f40, #000000);
+	
+		opacity: 6;
+	height: 100vh;
+	/* flex-grow:3; */
+	width: 80vw;
+	 opacity: 0.3;
+	background-color: black;
+	left:10px;
+}
+.flex-item2cls{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:20vw;
+	padding:20px;
+	height: 100vh;
+	
+}
+        .material-symbols-outlined {
+          overflow: hidden;
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+
+    </style>
+    </head>
+    <body>
+        
+    <div id="upper">
+        
+        
+        <!-- navigation bar -->
+            <div id="nav">
+                <div id="nav2">
+                    <!-- <div id="empty"></div> -->
+                    <div class="inisidenav">
+                        <a title="SpaceX, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SpaceX-Logo.svg ">
+                            <img  alt="SpaceX-Logo"  class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SpaceX-Logo.svg/256px-SpaceX-Logo.svg.png">
+                        </a>
+                        <div id="inisdeflex2">
+                            <div>FALCON 9</div>
+                            <div>FALCON HEAVY</div>
+                            <div>DRAGON</div>
+                            <div>STARSHIP</div>
+                            <div>HUMAN SPACEFLIGHT</div>
+                            <div>RIDSHARE</div>
+                            <div>SATRSHIELD</div>
+                            <div>STARLINK</div>
+                        </div>
+                    </div>       
+                </div>
+                <div class="beneathitinside">
+                    <div>SHOP</div> 
+                    <div id="butt"><buttton id ='button1'><span class="material-symbols-outlined">menu</buttton></span>
+                    </div>
+                </div> 
+            </div>
+           
+        <!--main container -->
+            <div id="main">
+                <h5>RECENT LAUNCH</h5>
+                <h2>HUGHES JUPITER 3 <br>MISSION</h2>  
+                <a href="https://www.spacex.com/launches/mission/?missionId=jupiter3"><h5>REWATCH</h5></a>  
+            </div>
+            <div id="mnuepage">
+                
+                <div id = 'flex-item1'></div>
+                <ul id="flex-item2">
+                    
+                    <li class="whomeliiii"><button id ='butt2'><span class="material-symbols-outlined">close</span></li>
+                    <hr>
+                    <li class="whomeliiii"><a href="" >MISSION</a></li>
+                    <hr>
+                    <li class="whomeliiii"><a href="">LAUNCHES</a></li>
+                    <hr>
+                    <li class="whomeliiii"><a href="">CAREERS</a></li>
+                    <hr>
+                    <li class="whomeliiii"><a href="">UPDATES</a></li>
+                    <hr>
+                    <li class="whomeliiii"><a href="">SHOP</a></li>
+                    <hr>
+                </ul>
+                
+            
+            
+        </div>  
+            
+        </div> 
+        <div id="mid">
+            <div class="main2">
+                <h5>RECENT LAUNCH</h5>
+                <h2>STARLINK MISSION</h2>  
+                <a href="https://www.spacex.com/launches/mission/?missionId=sl-6-7"><h5>REWATCH</h5></a>  
+            </div>
+        </div>    
+        <div id="mid2">
+            <div class="main2">
+                <h5>RECENT LAUNCH</h5>
+                <h2>ESA EUCLID MISSION</h2>  
+                <a href="https://www.spacex.com/launches/mission/?missionId=euclid"><h5>REWATCH</h5></a>  
+            </div>
+        </div>
+        <div id ="mid3">
+            <div class="main2">
+                <!-- <h5>RECENT LAUNCH</h5> -->
+                <h2>ESTARSHIP FLIGHT TEST</h2>  
+                <a href="https://www.spacex.com/launches/mission/?missionId=starship-flight-test"><h5>REWATCH</h5></a>  
+            </div>
+        </div>
+    </div>      
+    
+    
+    <script >
+    console.log('hello world');
+function print(data){
+    console.log(data);
+}
+
+const body=document.querySelector('body');
+const a = document.getElementById('mnuepage');
+const b = document.getElementById('button1');
+const c = document.getElementById('butt2');
+const lis = document.querySelectorAll('.whomeliiii')
+const ul = document.querySelector('#flex-item2');
+const khalibox =  document.querySelector('#flex-item1');
+const hr = document.querySelectorAll('hr');
+b.addEventListener('click',()=>{
+    // console.log(a.childNodes[3]);
+    // console.log(lis);
+    
+    a.style.display='flex';
+    
+    a.style.flexDirection='row';
+    khalibox.style.display = 'block';
+    ul.style.display = 'block';
+    for(let i=0; i<lis.length; i++) {
+        lis[i].style.display = 'list-item';
+    }
+    for(let z=0; z<hr.length; z++) {
+        hr[z].style.display = 'block';
+    };
+    print(khalibox.classList);
+    ul.setAttribute('class','flex-item2cls');
+    khalibox.setAttribute('class' , 'flex-item1cls')// ---> sets the attribute value that you specified attribute in the function
+
+    ul.style.flexGrow = '2';
+    ul.style.backgroundColor = 'black';
+    a.style.position='absolute';
+    a.style.zIndex = '9999';
+    a.style.top = '0vh';
+    a.style.right = '-0.2vh';
+    
+    
+})
+
+c.addEventListener('click',()=>{
+    ul.style.display = 'none  ';
+    for(let i=0; i<lis.length; i++) {
+        lis[i].style.display = 'none';
+    }
+    a.style.display='none';
+    
+});
+khalibox.addEventListener('click',()=>{
+    khalibox.style.display = 'none';
+    ul.style.display = 'none  ';
+    for(let i=0; i<lis.length; i++) {
+        lis[i].style.display = 'none';
+    }
+    a.style.display='none';
+   
+})
+a.addEventListener('scroll',()=>{
+    khalibox.style.display = 'none';
+    ul.style.display = 'none  ';
+    for(let i=0; i<lis.length; i++) {
+        lis[i].style.display = 'none';
+    }
+    a.style.display='none';
+   
+},true);
+
+
+
+//addEventListener arttaches the callback and its event to the WEBapi  or callbackqueue evnrioment and then  when the event get's fired then the function pushed into the call stack
+//addEventListener arttaches the callback and its event to the WEBapi  or callbackqueue evnrioment and then  when the event get's fired then the function pushed into the call stack
+    </script> 
+</body>
+</html>
