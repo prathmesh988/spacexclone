@@ -1,4 +1,5 @@
-console.log('hello world');
+// console.log('hello world');
+
 function print(data){
     console.log(data);
 }
@@ -11,6 +12,22 @@ const lis = document.querySelectorAll('.whomeliiii')
 const ul = document.querySelector('#flex-item2');
 const khalibox =  document.querySelector('#flex-item1');
 const hr = document.querySelectorAll('hr');
+let menueopen = false;
+// window.onload= function afterloading(){
+//     var menuopen = false;
+//     while(true){
+//             if (menuopen){
+//                 
+//             }}
+// }
+function closingmenu(){
+    khalibox.style.display = 'none';
+    ul.style.display = 'none  ';
+    for(let i=0; i<lis.length; i++) {
+        lis[i].style.display = 'none';
+    }
+    a.style.display='none';
+}
 b.addEventListener('click',()=>{
     // console.log(a.childNodes[3]);
     // console.log(lis);
@@ -50,26 +67,41 @@ b.addEventListener('click',()=>{
         lis[i].style.textAlign = 'center';
     }   
     // ul.style.backgroun
+    menuopen=true;
+    window.addEventListener('scroll',()=>{
+        closingmenu();
+        menuopen = false;
+    });
+//                 
 })
 
+
 c.addEventListener('click',()=>{
-    ul.style.display = 'none  ';
-    for(let i=0; i<lis.length; i++) {
-        lis[i].style.display = 'none';
-    }
-    a.style.display='none';
-    
+    closingmenu();
 });
 khalibox.addEventListener('click',()=>{
-    khalibox.style.display = 'none';
-    ul.style.display = 'none  ';
-    for(let i=0; i<lis.length; i++) {
-        lis[i].style.display = 'none';
-    }
-    a.style.display='none';
+   closingmenu();
+   
    
 })
 
+// ul.addEventListener('scroll',()=>{
+//     print('hello world');
+//     a.style.display = 'none';
 
 
+
+
+// while(true){
+//     if (menu){
+//         window.addEventListener('scroll',()=>{closingmenu();});
+//     }    
+    
+    
+
+// }
+
+
+ // console.log(document.dispatchEvent())
+ 
 //addEventListener arttaches the callback and its event to the WEBapi  or callbackqueue evnrioment and then  when the event get's fired then the function pushed into the call stack
