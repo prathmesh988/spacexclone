@@ -10,8 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Caveat&family=Lato:wght@900&family=Montserrat:wght@600&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
-        *{
+    <sc>*{
 	/* background-color: transparent; */
 	margin:0px;
 	padding: 0px;
@@ -31,6 +30,9 @@ a{
 	text-decoration: none;
 	color:white;
 }
+button{
+	cursor: pointer;
+}
 
 #mnuepage,#flex-item2,.whomeliiii {
 	
@@ -45,7 +47,7 @@ a{
 #flex-item1{
 
 	background-color: black;
-	opacity: 0.2;
+	opacity: 0.8;
 }
  
 /* #mnuepage .extraspace2{
@@ -205,38 +207,48 @@ a{
 }
 
 .flex-item1cls{
-	background-color: linear-gradient(#817f7f, #3f3f40, #000000);
 	
-		opacity: 6;
-	height: 100vh;
-	/* flex-grow:3; */
+	overflow: hidden;
+	min-height: 100vh; 
+	
+	min-height:100vh;
 	width: 80vw;
-	 opacity: 0.3;
-	background-color: black;
-	left:10px;
+	opacity:0.8;
+
 }
 .flex-item2cls{
-	display: flex;
+	font-size: 20px;
+	font-weight: 10;
 	flex-direction: column;
-	align-items: center;
+	justify-content:stretch;
+	
+	background-color: black !important;
+	opacity: 1 !important;
+	align-items: flex-end;
 	width:20vw;
 	padding:20px;
-	height: 100vh;
+	height: 120vh;
 	
 }
-        .material-symbols-outlined {
-          overflow: hidden;
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 48
-        }
+.flex-item1cls li{
+	margin-top: 1vw;
+	margin-right:1vw ;
+	padding-bottom: 10px;
+}
+
+ #butt2{
+	margin-bottom: 3vh;
+
+}
+ 
+.flex-item1cls hr{
+	justify-self: space-around;	
+}
 
     </style>
     </head>
     <body>
-        
+          
     <div id="upper">
         
         
@@ -322,79 +334,92 @@ a{
     
     
     <script >
-    console.log('hello world');
-function print(data){
-    console.log(data);
-}
+        console.log('hello world');
+        function print(data){
+            console.log(data);
+        }
 
-const body=document.querySelector('body');
-const a = document.getElementById('mnuepage');
-const b = document.getElementById('button1');
-const c = document.getElementById('butt2');
-const lis = document.querySelectorAll('.whomeliiii')
-const ul = document.querySelector('#flex-item2');
-const khalibox =  document.querySelector('#flex-item1');
-const hr = document.querySelectorAll('hr');
-b.addEventListener('click',()=>{
-    // console.log(a.childNodes[3]);
-    // console.log(lis);
-    
-    a.style.display='flex';
-    
-    a.style.flexDirection='row';
-    khalibox.style.display = 'block';
-    ul.style.display = 'block';
-    for(let i=0; i<lis.length; i++) {
-        lis[i].style.display = 'list-item';
-    }
-    for(let z=0; z<hr.length; z++) {
-        hr[z].style.display = 'block';
-    };
-    print(khalibox.classList);
-    ul.setAttribute('class','flex-item2cls');
-    khalibox.setAttribute('class' , 'flex-item1cls')// ---> sets the attribute value that you specified attribute in the function
+        const body=document.querySelector('body');
+        const a = document.getElementById('mnuepage');
+        const b = document.getElementById('button1');
+        const c = document.getElementById('butt2');
+        const lis = document.querySelectorAll('.whomeliiii')
+        const ul = document.querySelector('#flex-item2');
+        const khalibox =  document.querySelector('#flex-item1');
+        const hr = document.querySelectorAll('hr');
+        b.addEventListener('click',()=>{
+            // console.log(a.childNodes[3]);
+            // console.log(lis);
+            
+            a.style.display='flex';
+            
+            a.style.flexDirection='row';
+            khalibox.style.display = 'block';
+            ul.style.display = 'inline-flex';
+            for(let i=0; i<lis.length; i++) {
+                lis[i].style.display = 'list-item';
+            }
+            for(let z=0; z<hr.length; z++) {
+                hr[z].style.display = 'block';
+                hr[z].style.backgroundColor='#5a5a5a';
+            };
+            print(khalibox.classList);
+            ul.setAttribute('class','flex-item2cls');
+            ul.style.backgroundColor='black';
+            ul.style.opacity='1';
+            khalibox.setAttribute('class' , 'flex-item1cls');// ---> sets the attribute value that you specified attribute in the function
 
-    ul.style.flexGrow = '2';
-    ul.style.backgroundColor = 'black';
-    a.style.position='absolute';
-    a.style.zIndex = '9999';
-    a.style.top = '0vh';
-    a.style.right = '-0.2vh';
-    
-    
-})
+            ul.style.flexGrow = '2';
+            // ul.style.backgroundColor = 'black';
+            a.style.position='absolute';
+            a.style.zIndex = '9999';
+            a.style.top = '0vh';
+            a.style.right = '-0.2vh';
+            // khalibox.style.backgroundColor='black';
+            // khalibox.style.opacity='0.8';
+            for(let i=0; i<lis.length; i++) {
+                if(i===0){
+                    c.style.color = 'white';
+                    c.style.borderStyle ='none';
+                    c.style.backgroundColor= 'black';
+                }
+                lis[i].style.textAlign = 'center';
+            }   
+            // ul.style.backgroun
+        })
 
-c.addEventListener('click',()=>{
-    ul.style.display = 'none  ';
-    for(let i=0; i<lis.length; i++) {
-        lis[i].style.display = 'none';
-    }
-    a.style.display='none';
-    
-});
-khalibox.addEventListener('click',()=>{
-    khalibox.style.display = 'none';
-    ul.style.display = 'none  ';
-    for(let i=0; i<lis.length; i++) {
-        lis[i].style.display = 'none';
-    }
-    a.style.display='none';
-   
-})
-a.addEventListener('scroll',()=>{
-    khalibox.style.display = 'none';
-    ul.style.display = 'none  ';
-    for(let i=0; i<lis.length; i++) {
-        lis[i].style.display = 'none';
-    }
-    a.style.display='none';
-   
-},true);
+        c.addEventListener('click',()=>{
+            ul.style.display = 'none  ';
+            for(let i=0; i<lis.length; i++) {
+                lis[i].style.display = 'none';
+            }
+            a.style.display='none';
+            
+        });
+        khalibox.addEventListener('click',()=>{
+            khalibox.style.display = 'none';
+            ul.style.display = 'none  ';
+            for(let i=0; i<lis.length; i++) {
+                lis[i].style.display = 'none';
+            }
+            a.style.display='none';
+        
+        })
 
-
+        // the callback's not called when the scroll event is fired
+        ul.addEventListener('scroll',()=>{
+            console.log('hellooo this is the 2nd scroll event');
+            khalibox.style.display = 'none';
+            ul.style.display = 'none  ';
+            for(let i=0; i<lis.length; i++) {
+                lis[i].style.display = 'none';
+            }
+            a.style.display='none';
+        
+        },true);
 
 //addEventListener arttaches the callback and its event to the WEBapi  or callbackqueue evnrioment and then  when the event get's fired then the function pushed into the call stack
-//addEventListener arttaches the callback and its event to the WEBapi  or callbackqueue evnrioment and then  when the event get's fired then the function pushed into the call stack
-    </script> 
+        //addEventListener arttaches the callback and its event to the WEBapi  or callbackqueue evnrioment and then  when the event get's fired then the function pushed into the call stack
+</script>
 </body>
 </html>

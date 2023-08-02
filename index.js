@@ -19,25 +19,37 @@ b.addEventListener('click',()=>{
     
     a.style.flexDirection='row';
     khalibox.style.display = 'block';
-    ul.style.display = 'block';
+    ul.style.display = 'inline-flex';
     for(let i=0; i<lis.length; i++) {
         lis[i].style.display = 'list-item';
     }
     for(let z=0; z<hr.length; z++) {
         hr[z].style.display = 'block';
+        hr[z].style.backgroundColor='#5a5a5a';
     };
     print(khalibox.classList);
     ul.setAttribute('class','flex-item2cls');
-    khalibox.setAttribute('class' , 'flex-item1cls')// ---> sets the attribute value that you specified attribute in the function
+    ul.style.backgroundColor='black';
+    ul.style.opacity='1';
+    khalibox.setAttribute('class' , 'flex-item1cls');// ---> sets the attribute value that you specified attribute in the function
 
     ul.style.flexGrow = '2';
-    ul.style.backgroundColor = 'black';
+    // ul.style.backgroundColor = 'black';
     a.style.position='absolute';
     a.style.zIndex = '9999';
     a.style.top = '0vh';
     a.style.right = '-0.2vh';
-    
-    
+    // khalibox.style.backgroundColor='black';
+    // khalibox.style.opacity='0.8';
+    for(let i=0; i<lis.length; i++) {
+        if(i===0){
+            c.style.color = 'white';
+            c.style.borderStyle ='none';
+            c.style.backgroundColor= 'black';
+        }
+        lis[i].style.textAlign = 'center';
+    }   
+    // ul.style.backgroun
 })
 
 c.addEventListener('click',()=>{
@@ -58,15 +70,6 @@ khalibox.addEventListener('click',()=>{
    
 })
 
-// the callback's not called when the scroll event is fired
-khalibox.addEventListener('scroll',()=>{
-    khalibox.style.display = 'none';
-    ul.style.display = 'none  ';
-    for(let i=0; i<lis.length; i++) {
-        lis[i].style.display = 'none';
-    }
-    a.style.display='none';
-   
-})
+
 
 //addEventListener arttaches the callback and its event to the WEBapi  or callbackqueue evnrioment and then  when the event get's fired then the function pushed into the call stack
