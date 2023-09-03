@@ -67,10 +67,10 @@ b.addEventListener('click',()=>{
         lis[i].style.textAlign = 'center';
     }   
     // ul.style.backgroun
-    menuopen=true;
+  //  menuopen=true;
     window.addEventListener('scroll',()=>{
         closingmenu();
-        menuopen = false;
+       // menuopen = false;
     });
 //                 
 })
