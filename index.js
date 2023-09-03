@@ -12,7 +12,7 @@ const lis = document.querySelectorAll('.whomeliiii')
 const ul = document.querySelector('#flex-item2');
 const khalibox =  document.querySelector('#flex-item1');
 const hr = document.querySelectorAll('hr');
-let menueopen = false;
+//let menueopen = false;
 // window.onload= function afterloading(){
 //     var menuopen = false;
 //     while(true){
